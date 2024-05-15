@@ -47,3 +47,7 @@ python write.py Copy.bin waldorf-microwave-factory-sysex.bin out 667C 0005 B4 --
 0005(h) is the offset for when patch data starts in Microwave I Bank dumps.
 B4(h) is the size of Microwave I sysex patch data and you'll pretty much never change this.
 Use the --incremental argument if you want to create banks of all patches in a Bank dump.
+
+### Important
+Microwave patches begin with the Oscillator 1 octave in hex and end with 55(h). Find 55(h) of the patch you want to replace in your sysex file using a hex editor and select backwards to B4. HxD shows this at the bottom of the screen as "Length(h):B4"
+After doing this, you'll be at the byte of the offset of the patch that you want to replace. Use that as your destination_offset argument.
