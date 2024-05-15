@@ -27,7 +27,7 @@ Open a terminal or command prompt on your system.
 Use the following command syntax to run the script:
 
 ```bash
-python write.py source_file destination_folder_or_file output_folder source_offset destination_offset size [--incremental] [--chronological]
+python write.py source_file destination_folder_or_file output_folder source_offset destination_offset size [--incremental]
 ```
 
 - **source_file**: Path to the source file.
