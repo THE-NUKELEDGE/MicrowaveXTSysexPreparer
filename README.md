@@ -46,4 +46,4 @@ python write.py Copy.bin waldorf-microwave-factory-sysex.bin out 667C 0005 B4 --
 667C(h) is the offset of the final sysex patch for the included Copy.bin that you'll want to use as a base for whatever other sysex you'll be importing patches from, so you probably don't want to change it.
 0005(h) is the offset for when patch data starts in Microwave I Bank dumps.
 B4(h) is the size of Microwave I sysex patch data and you'll pretty much never change this.
-Use the --incremental argument if you want to create banks of all 
+Use the --incremental argument if you want to create banks of all patches in a Bank dump.
